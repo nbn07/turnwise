@@ -1,0 +1,1895 @@
+[
+ {
+  "session": "bugfix-l",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.04826,
+   "cache_read": 0.014943000000000001,
+   "output": 0.024640000000000002
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 9652,
+   "cache_read": 74715,
+   "output": 1232
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.087875
+  },
+  "ctx_median": 21520,
+  "ctx_max": 22711,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027825,
+   "normal_growth": 0.020435
+  },
+  "ctx_first": 18624,
+  "read_split": {
+   "fixed_prefix_reread": 0.013785400000000001,
+   "conversation_reread": 0.0011576000000000002
+  },
+  "thinking_tokens": 160,
+  "out_chars": {
+   "tool_call_args": 811,
+   "visible_text": 894
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 1,
+   "Edit": 1,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 1209,
+   "Read": 331,
+   "Edit": 39,
+   "Bash": 94
+  },
+  "tool_first_cost": {
+   "Grep": 0.009672,
+   "Read": 0.002648,
+   "Edit": 0.000312,
+   "Bash": 0.000752
+  },
+  "tool_carry_cost": {
+   "Grep": 0.00048360000000000005,
+   "Read": 6.62e-05,
+   "Edit": 0.0,
+   "Bash": 0.0
+  },
+  "reads": 1,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-l",
+  "project": "baseline",
+  "requests": 6,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 4.7999999999999994e-05,
+   "cache_write": 0.055645,
+   "cache_read": 0.024376400000000003,
+   "output": 0.03816
+  },
+  "tokens": {
+   "uncached_input": 12,
+   "cache_write": 11129,
+   "cache_read": 121882,
+   "output": 1908
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.1182294
+  },
+  "ctx_median": 22530,
+  "ctx_max": 24188,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02786,
+   "normal_growth": 0.027785
+  },
+  "ctx_first": 18631,
+  "read_split": {
+   "fixed_prefix_reread": 0.021242,
+   "conversation_reread": 0.0031344
+  },
+  "thinking_tokens": 186,
+  "out_chars": {
+   "tool_call_args": 1297,
+   "visible_text": 1440
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Read": 1,
+   "Edit": 1,
+   "Bash": 2
+  },
+  "tool_tokens": {
+   "Grep": 1617,
+   "Read": 237,
+   "Edit": 39,
+   "Bash": 141
+  },
+  "tool_first_cost": {
+   "Grep": 0.012936,
+   "Read": 0.001896,
+   "Edit": 0.000312,
+   "Bash": 0.001128
+  },
+  "tool_carry_cost": {
+   "Grep": 0.0011346000000000001,
+   "Read": 0.00014220000000000001,
+   "Edit": 1.5600000000000003e-05,
+   "Bash": 2.8400000000000003e-05
+  },
+  "reads": 1,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-l",
+  "project": "baseline",
+  "requests": 5,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.9999999999999996e-05,
+   "cache_write": 0.053495,
+   "cache_read": 0.019854200000000002,
+   "output": 0.028019999999999996
+  },
+  "tokens": {
+   "uncached_input": 10,
+   "cache_write": 10699,
+   "cache_read": 99271,
+   "output": 1401
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.10140919999999999
+  },
+  "ctx_median": 22493,
+  "ctx_max": 23758,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02787,
+   "normal_growth": 0.025625
+  },
+  "ctx_first": 18633,
+  "read_split": {
+   "fixed_prefix_reread": 0.017517400000000002,
+   "conversation_reread": 0.0023368
+  },
+  "thinking_tokens": 197,
+  "out_chars": {
+   "tool_call_args": 922,
+   "visible_text": 1126
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Edit": 1,
+   "Bash": 2
+  },
+  "tool_tokens": {
+   "Grep": 1855,
+   "Edit": 39,
+   "Bash": 137
+  },
+  "tool_first_cost": {
+   "Grep": 0.01484,
+   "Edit": 0.000312,
+   "Bash": 0.001096
+  },
+  "tool_carry_cost": {
+   "Grep": 0.000975,
+   "Edit": 1.5600000000000003e-05,
+   "Bash": 3.4800000000000006e-05
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-l",
+  "project": "baseline",
+  "requests": 6,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 4.7999999999999994e-05,
+   "cache_write": 0.09590000000000001,
+   "cache_read": 0.0276692,
+   "output": 0.03878
+  },
+  "tokens": {
+   "uncached_input": 12,
+   "cache_write": 19180,
+   "cache_read": 138346,
+   "output": 1939
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.16239720000000002
+  },
+  "ctx_median": 26586,
+  "ctx_max": 32239,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027845,
+   "normal_growth": 0.068055
+  },
+  "ctx_first": 18628,
+  "read_split": {
+   "fixed_prefix_reread": 0.021239,
+   "conversation_reread": 0.0064302000000000005
+  },
+  "thinking_tokens": 243,
+  "out_chars": {
+   "tool_call_args": 1367,
+   "visible_text": 1291
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Edit": 1,
+   "Bash": 2,
+   "Read": 1
+  },
+  "tool_tokens": {
+   "Grep": 6151,
+   "Edit": 39,
+   "Bash": 143,
+   "Read": 550
+  },
+  "tool_first_cost": {
+   "Grep": 0.049208,
+   "Edit": 0.000312,
+   "Bash": 0.001144,
+   "Read": 0.0044
+  },
+  "tool_carry_cost": {
+   "Grep": 0.0030644,
+   "Edit": 2.3400000000000003e-05,
+   "Bash": 3.8400000000000005e-05,
+   "Read": 0.00011
+  },
+  "reads": 1,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-l",
+  "project": "baseline",
+  "requests": 5,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.9999999999999996e-05,
+   "cache_write": 0.05193,
+   "cache_read": 0.019816399999999998,
+   "output": 0.028999999999999998
+  },
+  "tokens": {
+   "uncached_input": 10,
+   "cache_write": 10386,
+   "cache_read": 99082,
+   "output": 1450
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.1007864
+  },
+  "ctx_median": 22520,
+  "ctx_max": 23445,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027855,
+   "normal_growth": 0.024075000000000003
+  },
+  "ctx_first": 18630,
+  "read_split": {
+   "fixed_prefix_reread": 0.017515000000000003,
+   "conversation_reread": 0.0023014000000000003
+  },
+  "thinking_tokens": 185,
+  "out_chars": {
+   "tool_call_args": 909,
+   "visible_text": 1172
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Edit": 1,
+   "Bash": 2
+  },
+  "tool_tokens": {
+   "Grep": 1731,
+   "Edit": 39,
+   "Bash": 98
+  },
+  "tool_first_cost": {
+   "Grep": 0.013848000000000001,
+   "Edit": 0.000312,
+   "Bash": 0.000784
+  },
+  "tool_carry_cost": {
+   "Grep": 0.0009502,
+   "Edit": 1.5600000000000003e-05,
+   "Bash": 2.8400000000000003e-05
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-l",
+  "project": "baseline",
+  "requests": 5,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.9999999999999996e-05,
+   "cache_write": 0.09292,
+   "cache_read": 0.0212042,
+   "output": 0.0356
+  },
+  "tokens": {
+   "uncached_input": 10,
+   "cache_write": 18584,
+   "cache_read": 106021,
+   "output": 1780
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.14976420000000001
+  },
+  "ctx_median": 22447,
+  "ctx_max": 31643,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027875,
+   "normal_growth": 0.06504499999999999
+  },
+  "ctx_first": 18634,
+  "read_split": {
+   "fixed_prefix_reread": 0.0175182,
+   "conversation_reread": 0.003686
+  },
+  "thinking_tokens": 160,
+  "out_chars": {
+   "tool_call_args": 1191,
+   "visible_text": 1250
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Read": 2,
+   "Edit": 1,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 5993,
+   "Read": 573,
+   "Edit": 39,
+   "Bash": 67
+  },
+  "tool_first_cost": {
+   "Grep": 0.047944,
+   "Read": 0.004584,
+   "Edit": 0.000312,
+   "Bash": 0.000536
+  },
+  "tool_carry_cost": {
+   "Grep": 0.0017394,
+   "Read": 9.200000000000002e-06,
+   "Edit": 1.5600000000000003e-05,
+   "Bash": 2.68e-05
+  },
+  "reads": 2,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-s",
+  "project": "baseline",
+  "requests": 6,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 4.7999999999999994e-05,
+   "cache_write": 0.042645,
+   "cache_read": 0.0226482,
+   "output": 0.0335
+  },
+  "tokens": {
+   "uncached_input": 12,
+   "cache_write": 8529,
+   "cache_read": 113241,
+   "output": 1675
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0988412
+  },
+  "ctx_median": 20664,
+  "ctx_max": 21588,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02779,
+   "normal_growth": 0.014855
+  },
+  "ctx_first": 18617,
+  "read_split": {
+   "fixed_prefix_reread": 0.021228000000000004,
+   "conversation_reread": 0.0014202
+  },
+  "thinking_tokens": 105,
+  "out_chars": {
+   "tool_call_args": 1134,
+   "visible_text": 1004
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Read": 1,
+   "Bash": 3,
+   "Edit": 1
+  },
+  "tool_tokens": {
+   "Grep": 137,
+   "Read": 516,
+   "Bash": 57,
+   "Edit": 36
+  },
+  "tool_first_cost": {
+   "Grep": 0.001096,
+   "Read": 0.004128,
+   "Bash": 0.000456,
+   "Edit": 0.000288
+  },
+  "tool_carry_cost": {
+   "Grep": 9.56e-05,
+   "Read": 0.00030960000000000004,
+   "Bash": 8.200000000000001e-06,
+   "Edit": 1.4400000000000001e-05
+  },
+  "reads": 1,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-s",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.038575,
+   "cache_read": 0.014165200000000003,
+   "output": 0.02206
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 7715,
+   "cache_read": 70826,
+   "output": 1103
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.07483219999999999
+  },
+  "ctx_median": 19579,
+  "ctx_max": 20774,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02779,
+   "normal_growth": 0.010785
+  },
+  "ctx_first": 18617,
+  "read_split": {
+   "fixed_prefix_reread": 0.0137812,
+   "conversation_reread": 0.000384
+  },
+  "thinking_tokens": 60,
+  "out_chars": {
+   "tool_call_args": 769,
+   "visible_text": 794
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 1,
+   "Edit": 1,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 106,
+   "Read": 516,
+   "Edit": 36,
+   "Bash": 29
+  },
+  "tool_first_cost": {
+   "Grep": 0.000848,
+   "Read": 0.004128,
+   "Edit": 0.000288,
+   "Bash": 0.000232
+  },
+  "tool_carry_cost": {
+   "Grep": 4.240000000000001e-05,
+   "Read": 0.0001032,
+   "Edit": 0.0,
+   "Bash": 0.0
+  },
+  "reads": 1,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-s",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.037215000000000005,
+   "cache_read": 0.0141164,
+   "output": 0.02076
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 7443,
+   "cache_read": 70582,
+   "output": 1038
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0721234
+  },
+  "ctx_median": 19455,
+  "ctx_max": 20502,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027805,
+   "normal_growth": 0.00941
+  },
+  "ctx_first": 18620,
+  "read_split": {
+   "fixed_prefix_reread": 0.013783,
+   "conversation_reread": 0.0003334
+  },
+  "thinking_tokens": 37,
+  "out_chars": {
+   "tool_call_args": 771,
+   "visible_text": 793
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 1,
+   "Edit": 1,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 123,
+   "Read": 358,
+   "Edit": 36,
+   "Bash": 27
+  },
+  "tool_first_cost": {
+   "Grep": 0.000984,
+   "Read": 0.002864,
+   "Edit": 0.000288,
+   "Bash": 0.000216
+  },
+  "tool_carry_cost": {
+   "Grep": 4.92e-05,
+   "Read": 7.16e-05,
+   "Edit": 0.0,
+   "Bash": 0.0
+  },
+  "reads": 1,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-s",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.04096,
+   "cache_read": 0.0142392,
+   "output": 0.02682
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 8192,
+   "cache_read": 71196,
+   "output": 1341
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0820512
+  },
+  "ctx_median": 19763,
+  "ctx_max": 21251,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.0278,
+   "normal_growth": 0.013159999999999998
+  },
+  "ctx_first": 18619,
+  "read_split": {
+   "fixed_prefix_reread": 0.0137824,
+   "conversation_reread": 0.00045680000000000004
+  },
+  "thinking_tokens": 188,
+  "out_chars": {
+   "tool_call_args": 983,
+   "visible_text": 679
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 2,
+   "Edit": 1,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 143,
+   "Read": 524,
+   "Edit": 36,
+   "Bash": 29
+  },
+  "tool_first_cost": {
+   "Grep": 0.001144,
+   "Read": 0.0041919999999999995,
+   "Edit": 0.000288,
+   "Bash": 0.000232
+  },
+  "tool_carry_cost": {
+   "Grep": 5.72e-05,
+   "Read": 0.00010480000000000001,
+   "Edit": 0.0,
+   "Bash": 0.0
+  },
+  "reads": 2,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-s",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.04,
+   "cache_read": 0.014223799999999998,
+   "output": 0.0269
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 8000,
+   "cache_read": 71119,
+   "output": 1345
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0811558
+  },
+  "ctx_median": 19723,
+  "ctx_max": 21059,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027815,
+   "normal_growth": 0.012185
+  },
+  "ctx_first": 18622,
+  "read_split": {
+   "fixed_prefix_reread": 0.0137842,
+   "conversation_reread": 0.0004396
+  },
+  "thinking_tokens": 179,
+  "out_chars": {
+   "tool_call_args": 930,
+   "visible_text": 792
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 2,
+   "Edit": 1,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 126,
+   "Read": 524,
+   "Edit": 36,
+   "Bash": 27
+  },
+  "tool_first_cost": {
+   "Grep": 0.001008,
+   "Read": 0.0041919999999999995,
+   "Edit": 0.000288,
+   "Bash": 0.000216
+  },
+  "tool_carry_cost": {
+   "Grep": 5.0400000000000005e-05,
+   "Read": 0.00010480000000000001,
+   "Edit": 0.0,
+   "Bash": 0.0
+  },
+  "reads": 2,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "bugfix-s",
+  "project": "baseline",
+  "requests": 7,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 5.599999999999999e-05,
+   "cache_write": 0.053119999999999994,
+   "cache_read": 0.027544800000000005,
+   "output": 0.0504
+  },
+  "tokens": {
+   "uncached_input": 14,
+   "cache_write": 10624,
+   "cache_read": 137724,
+   "output": 2520
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.1311208
+  },
+  "ctx_median": 21333,
+  "ctx_max": 23683,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027815,
+   "normal_growth": 0.025305
+  },
+  "ctx_first": 18622,
+  "read_split": {
+   "fixed_prefix_reread": 0.024957399999999998,
+   "conversation_reread": 0.0025874
+  },
+  "thinking_tokens": 251,
+  "out_chars": {
+   "tool_call_args": 2333,
+   "visible_text": 1135
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Read": 3,
+   "Edit": 2,
+   "Bash": 2
+  },
+  "tool_tokens": {
+   "Grep": 622,
+   "Read": 676,
+   "Edit": 72,
+   "Bash": 82
+  },
+  "tool_first_cost": {
+   "Grep": 0.0049759999999999995,
+   "Read": 0.0054080000000000005,
+   "Edit": 0.000576,
+   "Bash": 0.000656
+  },
+  "tool_carry_cost": {
+   "Grep": 0.0003346,
+   "Read": 0.00046760000000000004,
+   "Edit": 2.16e-05,
+   "Bash": 1.8e-05
+  },
+  "reads": 3,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "feature-",
+  "project": "baseline",
+  "requests": 6,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 4.7999999999999994e-05,
+   "cache_write": 0.098095,
+   "cache_read": 0.028908600000000003,
+   "output": 0.08760000000000001
+  },
+  "tokens": {
+   "uncached_input": 12,
+   "cache_write": 19619,
+   "cache_read": 144543,
+   "output": 4380
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.2146516
+  },
+  "ctx_median": 29690,
+  "ctx_max": 32678,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.029025,
+   "normal_growth": 0.06907
+  },
+  "ctx_first": 18864,
+  "read_split": {
+   "fixed_prefix_reread": 0.021475,
+   "conversation_reread": 0.0074336
+  },
+  "thinking_tokens": 1093,
+  "out_chars": {
+   "tool_call_args": 5312,
+   "visible_text": 1626
+  },
+  "tool_calls": {
+   "Bash": 4,
+   "Edit": 1
+  },
+  "tool_tokens": {
+   "Bash": 5504,
+   "Edit": 38
+  },
+  "tool_first_cost": {
+   "Bash": 0.044032,
+   "Edit": 0.000304
+  },
+  "tool_carry_cost": {
+   "Bash": 0.0033522,
+   "Edit": 7.600000000000001e-06
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "feature-",
+  "project": "baseline",
+  "requests": 5,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.9999999999999996e-05,
+   "cache_write": 0.07009,
+   "cache_read": 0.020255600000000002,
+   "output": 0.07352
+  },
+  "tokens": {
+   "uncached_input": 10,
+   "cache_write": 14018,
+   "cache_read": 101278,
+   "output": 3676
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.1639056
+  },
+  "ctx_median": 22676,
+  "ctx_max": 27077,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.03044,
+   "normal_growth": 0.039650000000000005
+  },
+  "ctx_first": 19147,
+  "read_split": {
+   "fixed_prefix_reread": 0.017928600000000003,
+   "conversation_reread": 0.002327
+  },
+  "thinking_tokens": 694,
+  "out_chars": {
+   "tool_call_args": 5218,
+   "visible_text": 1361
+  },
+  "tool_calls": {
+   "Bash": 4
+  },
+  "tool_tokens": {
+   "Bash": 2489
+  },
+  "tool_first_cost": {
+   "Bash": 0.019912
+  },
+  "tool_carry_cost": {
+   "Bash": 0.0009596000000000001
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "feature-",
+  "project": "baseline",
+  "requests": 5,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.9999999999999996e-05,
+   "cache_write": 0.071085,
+   "cache_read": 0.020356600000000002,
+   "output": 0.0729
+  },
+  "tokens": {
+   "uncached_input": 10,
+   "cache_write": 14217,
+   "cache_read": 101783,
+   "output": 3645
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.16438160000000002
+  },
+  "ctx_median": 22849,
+  "ctx_max": 27276,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.03046,
+   "normal_growth": 0.040624999999999994
+  },
+  "ctx_first": 19151,
+  "read_split": {
+   "fixed_prefix_reread": 0.0179318,
+   "conversation_reread": 0.0024248000000000004
+  },
+  "thinking_tokens": 626,
+  "out_chars": {
+   "tool_call_args": 5181,
+   "visible_text": 1374
+  },
+  "tool_calls": {
+   "Bash": 4
+  },
+  "tool_tokens": {
+   "Bash": 2605
+  },
+  "tool_first_cost": {
+   "Bash": 0.02084
+  },
+  "tool_carry_cost": {
+   "Bash": 0.0010012
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "feature-",
+  "project": "baseline",
+  "requests": 7,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 5.599999999999999e-05,
+   "cache_write": 0.083925,
+   "cache_read": 0.03115,
+   "output": 0.09040000000000001
+  },
+  "tokens": {
+   "uncached_input": 14,
+   "cache_write": 16785,
+   "cache_read": 155750,
+   "output": 4520
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.20553099999999996
+  },
+  "ctx_median": 24896,
+  "ctx_max": 29844,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.030455,
+   "normal_growth": 0.05347000000000001
+  },
+  "ctx_first": 19150,
+  "read_split": {
+   "fixed_prefix_reread": 0.025591000000000003,
+   "conversation_reread": 0.005559000000000001
+  },
+  "thinking_tokens": 937,
+  "out_chars": {
+   "tool_call_args": 5428,
+   "visible_text": 1791
+  },
+  "tool_calls": {
+   "Bash": 6
+  },
+  "tool_tokens": {
+   "Bash": 3376
+  },
+  "tool_first_cost": {
+   "Bash": 0.027008
+  },
+  "tool_carry_cost": {
+   "Bash": 0.0022158000000000004
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "feature-",
+  "project": "baseline",
+  "requests": 6,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 4.7999999999999994e-05,
+   "cache_write": 0.07304499999999998,
+   "cache_read": 0.02526,
+   "output": 0.07786
+  },
+  "tokens": {
+   "uncached_input": 12,
+   "cache_write": 14609,
+   "cache_read": 126300,
+   "output": 3893
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.17621299999999998
+  },
+  "ctx_median": 23303,
+  "ctx_max": 27668,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.030465,
+   "normal_growth": 0.04258
+  },
+  "ctx_first": 19152,
+  "read_split": {
+   "fixed_prefix_reread": 0.021763000000000005,
+   "conversation_reread": 0.0034970000000000005
+  },
+  "thinking_tokens": 645,
+  "out_chars": {
+   "tool_call_args": 5494,
+   "visible_text": 1682
+  },
+  "tool_calls": {
+   "Bash": 5
+  },
+  "tool_tokens": {
+   "Bash": 2659
+  },
+  "tool_first_cost": {
+   "Bash": 0.021272000000000003
+  },
+  "tool_carry_cost": {
+   "Bash": 0.0013536000000000002
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "feature-",
+  "project": "baseline",
+  "requests": 7,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 5.599999999999999e-05,
+   "cache_write": 0.07606000000000002,
+   "cache_read": 0.030229200000000005,
+   "output": 0.08325999999999999
+  },
+  "tokens": {
+   "uncached_input": 14,
+   "cache_write": 15212,
+   "cache_read": 151146,
+   "output": 4163
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.18960520000000003
+  },
+  "ctx_median": 23825,
+  "ctx_max": 28271,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.030455,
+   "normal_growth": 0.045605
+  },
+  "ctx_first": 19150,
+  "read_split": {
+   "fixed_prefix_reread": 0.025591000000000003,
+   "conversation_reread": 0.0046382
+  },
+  "thinking_tokens": 631,
+  "out_chars": {
+   "tool_call_args": 5583,
+   "visible_text": 1691
+  },
+  "tool_calls": {
+   "Bash": 6
+  },
+  "tool_tokens": {
+   "Bash": 2828
+  },
+  "tool_first_cost": {
+   "Bash": 0.022624
+  },
+  "tool_carry_cost": {
+   "Bash": 0.00183
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "feature-",
+  "project": "baseline",
+  "requests": 6,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 4.7999999999999994e-05,
+   "cache_write": 0.07810500000000001,
+   "cache_read": 0.024803400000000003,
+   "output": 0.08636
+  },
+  "tokens": {
+   "uncached_input": 12,
+   "cache_write": 15621,
+   "cache_read": 124017,
+   "output": 4318
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.1893164
+  },
+  "ctx_median": 23264,
+  "ctx_max": 28680,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.03048,
+   "normal_growth": 0.047625
+  },
+  "ctx_first": 19155,
+  "read_split": {
+   "fixed_prefix_reread": 0.021766000000000004,
+   "conversation_reread": 0.0030374
+  },
+  "thinking_tokens": 605,
+  "out_chars": {
+   "tool_call_args": 6634,
+   "visible_text": 1392
+  },
+  "tool_calls": {
+   "Bash": 5
+  },
+  "tool_tokens": {
+   "Bash": 2851
+  },
+  "tool_first_cost": {
+   "Bash": 0.022808
+  },
+  "tool_carry_cost": {
+   "Bash": 0.001322
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "question",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.04186499999999999,
+   "cache_read": 0.0143578,
+   "output": 0.02498
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 8373,
+   "cache_read": 71789,
+   "output": 1249
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.08123480000000001
+  },
+  "ctx_median": 20070,
+  "ctx_max": 21432,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02769,
+   "normal_growth": 0.014174999999999998
+  },
+  "ctx_first": 18597,
+  "read_split": {
+   "fixed_prefix_reread": 0.013769199999999999,
+   "conversation_reread": 0.0005886
+  },
+  "thinking_tokens": 89,
+  "out_chars": {
+   "tool_call_args": 606,
+   "visible_text": 1471
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 3
+  },
+  "tool_tokens": {
+   "Grep": 412,
+   "Read": 892
+  },
+  "tool_first_cost": {
+   "Grep": 0.003296,
+   "Read": 0.007136
+  },
+  "tool_carry_cost": {
+   "Grep": 0.00016480000000000002,
+   "Read": 0.000123
+  },
+  "reads": 3,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "question",
+  "project": "baseline",
+  "requests": 3,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 2.4e-05,
+   "cache_write": 0.042585,
+   "cache_read": 0.0101472,
+   "output": 0.02106
+  },
+  "tokens": {
+   "uncached_input": 6,
+   "cache_write": 8517,
+   "cache_read": 50736,
+   "output": 1053
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0738162
+  },
+  "ctx_median": 19080,
+  "ctx_max": 21576,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02772,
+   "normal_growth": 0.014865
+  },
+  "ctx_first": 18603,
+  "read_split": {
+   "fixed_prefix_reread": 0.0100522,
+   "conversation_reread": 9.5e-05
+  },
+  "thinking_tokens": 53,
+  "out_chars": {
+   "tool_call_args": 449,
+   "visible_text": 1450
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 2
+  },
+  "tool_tokens": {
+   "Grep": 178,
+   "Read": 1325
+  },
+  "tool_first_cost": {
+   "Grep": 0.001424,
+   "Read": 0.0106
+  },
+  "tool_carry_cost": {
+   "Grep": 3.5600000000000005e-05,
+   "Read": 0.0
+  },
+  "reads": 2,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "question",
+  "project": "baseline",
+  "requests": 3,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 2.4e-05,
+   "cache_write": 0.04871,
+   "cache_read": 0.010180000000000002,
+   "output": 0.0232
+  },
+  "tokens": {
+   "uncached_input": 6,
+   "cache_write": 9742,
+   "cache_read": 50900,
+   "output": 1160
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.08211399999999999
+  },
+  "ctx_median": 19242,
+  "ctx_max": 22801,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02773,
+   "normal_growth": 0.02098
+  },
+  "ctx_first": 18605,
+  "read_split": {
+   "fixed_prefix_reread": 0.010053000000000001,
+   "conversation_reread": 0.000127
+  },
+  "thinking_tokens": 30,
+  "out_chars": {
+   "tool_call_args": 463,
+   "visible_text": 1764
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 2
+  },
+  "tool_tokens": {
+   "Grep": 295,
+   "Read": 2018
+  },
+  "tool_first_cost": {
+   "Grep": 0.00236,
+   "Read": 0.016144
+  },
+  "tool_carry_cost": {
+   "Grep": 5.9e-05,
+   "Read": 0.0
+  },
+  "reads": 2,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "question",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.041205,
+   "cache_read": 0.014285800000000001,
+   "output": 0.027020000000000002
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 8241,
+   "cache_read": 71429,
+   "output": 1351
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0825428
+  },
+  "ctx_median": 19886,
+  "ctx_max": 21300,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02773,
+   "normal_growth": 0.013475
+  },
+  "ctx_first": 18605,
+  "read_split": {
+   "fixed_prefix_reread": 0.013774000000000002,
+   "conversation_reread": 0.0005118000000000001
+  },
+  "thinking_tokens": 154,
+  "out_chars": {
+   "tool_call_args": 615,
+   "visible_text": 1509
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 3
+  },
+  "tool_tokens": {
+   "Grep": 217,
+   "Read": 962
+  },
+  "tool_first_cost": {
+   "Grep": 0.001736,
+   "Read": 0.007696
+  },
+  "tool_carry_cost": {
+   "Grep": 8.680000000000001e-05,
+   "Read": 0.00013920000000000002
+  },
+  "reads": 3,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "question",
+  "project": "baseline",
+  "requests": 3,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 2.4e-05,
+   "cache_write": 0.04051,
+   "cache_read": 0.010164000000000001,
+   "output": 0.0218
+  },
+  "tokens": {
+   "uncached_input": 6,
+   "cache_write": 8102,
+   "cache_read": 50820,
+   "output": 1090
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.072498
+  },
+  "ctx_median": 19163,
+  "ctx_max": 21161,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027725,
+   "normal_growth": 0.012785000000000001
+  },
+  "ctx_first": 18604,
+  "read_split": {
+   "fixed_prefix_reread": 0.0100526,
+   "conversation_reread": 0.00011140000000000001
+  },
+  "thinking_tokens": 43,
+  "out_chars": {
+   "tool_call_args": 464,
+   "visible_text": 1533
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 2
+  },
+  "tool_tokens": {
+   "Grep": 216,
+   "Read": 1006
+  },
+  "tool_first_cost": {
+   "Grep": 0.001728,
+   "Read": 0.008048
+  },
+  "tool_carry_cost": {
+   "Grep": 4.32e-05,
+   "Read": 0.0
+  },
+  "reads": 2,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "question",
+  "project": "baseline",
+  "requests": 3,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 2.4e-05,
+   "cache_write": 0.038215,
+   "cache_read": 0.010126200000000002,
+   "output": 0.01848
+  },
+  "tokens": {
+   "uncached_input": 6,
+   "cache_write": 7643,
+   "cache_read": 50631,
+   "output": 924
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0668452
+  },
+  "ctx_median": 18976,
+  "ctx_max": 20702,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027715,
+   "normal_growth": 0.0105
+  },
+  "ctx_first": 18602,
+  "read_split": {
+   "fixed_prefix_reread": 0.010051800000000001,
+   "conversation_reread": 7.44e-05
+  },
+  "thinking_tokens": 51,
+  "out_chars": {
+   "tool_call_args": 270,
+   "visible_text": 1439
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Read": 2
+  },
+  "tool_tokens": {
+   "Grep": 124,
+   "Read": 932
+  },
+  "tool_first_cost": {
+   "Grep": 0.000992,
+   "Read": 0.007456
+  },
+  "tool_carry_cost": {
+   "Grep": 2.48e-05,
+   "Read": 0.0
+  },
+  "reads": 2,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "refactor",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.03246,
+   "cache_read": 0.013960600000000002,
+   "output": 0.0121
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 6492,
+   "cache_read": 69803,
+   "output": 605
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0585526
+  },
+  "ctx_median": 19070,
+  "ctx_max": 19551,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027765,
+   "normal_growth": 0.0046949999999999995
+  },
+  "ctx_first": 18612,
+  "read_split": {
+   "fixed_prefix_reread": 0.0137782,
+   "conversation_reread": 0.00018240000000000002
+  },
+  "thinking_tokens": 0,
+  "out_chars": {
+   "tool_call_args": 434,
+   "visible_text": 612
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 193,
+   "Bash": 95
+  },
+  "tool_first_cost": {
+   "Grep": 0.001544,
+   "Bash": 0.00076
+  },
+  "tool_carry_cost": {
+   "Grep": 3.72e-05,
+   "Bash": 1.9e-05
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "refactor",
+  "project": "baseline",
+  "requests": 3,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 2.4e-05,
+   "cache_write": 0.031875,
+   "cache_read": 0.010119000000000001,
+   "output": 0.00996
+  },
+  "tokens": {
+   "uncached_input": 6,
+   "cache_write": 6375,
+   "cache_read": 50595,
+   "output": 498
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.051978
+  },
+  "ctx_median": 18918,
+  "ctx_max": 19434,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027825,
+   "normal_growth": 0.00405
+  },
+  "ctx_first": 18624,
+  "read_split": {
+   "fixed_prefix_reread": 0.010060600000000001,
+   "conversation_reread": 5.84e-05
+  },
+  "thinking_tokens": 0,
+  "out_chars": {
+   "tool_call_args": 371,
+   "visible_text": 553
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 93,
+   "Bash": 187
+  },
+  "tool_first_cost": {
+   "Grep": 0.000744,
+   "Bash": 0.001496
+  },
+  "tool_carry_cost": {
+   "Grep": 1.86e-05,
+   "Bash": 0.0
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "refactor",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.033225,
+   "cache_read": 0.0139938,
+   "output": 0.013240000000000002
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 6645,
+   "cache_read": 69969,
+   "output": 662
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.060490800000000004
+  },
+  "ctx_median": 19149,
+  "ctx_max": 19704,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027805,
+   "normal_growth": 0.00542
+  },
+  "ctx_first": 18620,
+  "read_split": {
+   "fixed_prefix_reread": 0.013783,
+   "conversation_reread": 0.0002108
+  },
+  "thinking_tokens": 0,
+  "out_chars": {
+   "tool_call_args": 475,
+   "visible_text": 549
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 193,
+   "Bash": 128
+  },
+  "tool_first_cost": {
+   "Grep": 0.001544,
+   "Bash": 0.001024
+  },
+  "tool_carry_cost": {
+   "Grep": 3.72e-05,
+   "Bash": 2.5600000000000002e-05
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "refactor",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.032615,
+   "cache_read": 0.013968800000000002,
+   "output": 0.01192
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 6523,
+   "cache_read": 69844,
+   "output": 596
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0585358
+  },
+  "ctx_median": 19088,
+  "ctx_max": 19582,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.02779,
+   "normal_growth": 0.004825
+  },
+  "ctx_first": 18617,
+  "read_split": {
+   "fixed_prefix_reread": 0.0137812,
+   "conversation_reread": 0.0001876
+  },
+  "thinking_tokens": 34,
+  "out_chars": {
+   "tool_call_args": 454,
+   "visible_text": 490
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 193,
+   "Bash": 95
+  },
+  "tool_first_cost": {
+   "Grep": 0.001544,
+   "Bash": 0.00076
+  },
+  "tool_carry_cost": {
+   "Grep": 3.72e-05,
+   "Bash": 1.9e-05
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "refactor",
+  "project": "baseline",
+  "requests": 4,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 3.2e-05,
+   "cache_write": 0.03258,
+   "cache_read": 0.013968600000000001,
+   "output": 0.011459999999999998
+  },
+  "tokens": {
+   "uncached_input": 8,
+   "cache_write": 6516,
+   "cache_read": 69843,
+   "output": 573
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.058040600000000005
+  },
+  "ctx_median": 19086,
+  "ctx_max": 19575,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027805,
+   "normal_growth": 0.004775
+  },
+  "ctx_first": 18620,
+  "read_split": {
+   "fixed_prefix_reread": 0.013783,
+   "conversation_reread": 0.0001856
+  },
+  "thinking_tokens": 0,
+  "out_chars": {
+   "tool_call_args": 449,
+   "visible_text": 501
+  },
+  "tool_calls": {
+   "Grep": 2,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 193,
+   "Bash": 95
+  },
+  "tool_first_cost": {
+   "Grep": 0.001544,
+   "Bash": 0.00076
+  },
+  "tool_carry_cost": {
+   "Grep": 3.72e-05,
+   "Bash": 1.9e-05
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ },
+ {
+  "session": "refactor",
+  "project": "baseline",
+  "requests": 3,
+  "user_prompts": 1,
+  "cost": {
+   "uncached_input": 2.4e-05,
+   "cache_write": 0.03139,
+   "cache_read": 0.0101198,
+   "output": 0.011219999999999999
+  },
+  "tokens": {
+   "uncached_input": 6,
+   "cache_write": 6278,
+   "cache_read": 50599,
+   "output": 561
+  },
+  "by_model": {
+   "claude-opus-5-5": 0.0527538
+  },
+  "ctx_median": 18926,
+  "ctx_max": 19337,
+  "cache_breaks": {},
+  "write_cost_by_cause": {
+   "session_start": 0.027805,
+   "normal_growth": 0.0035849999999999996
+  },
+  "ctx_first": 18620,
+  "read_split": {
+   "fixed_prefix_reread": 0.010059,
+   "conversation_reread": 6.080000000000001e-05
+  },
+  "thinking_tokens": 41,
+  "out_chars": {
+   "tool_call_args": 397,
+   "visible_text": 599
+  },
+  "tool_calls": {
+   "Grep": 1,
+   "Bash": 1
+  },
+  "tool_tokens": {
+   "Grep": 93,
+   "Bash": 128
+  },
+  "tool_first_cost": {
+   "Grep": 0.000744,
+   "Bash": 0.001024
+  },
+  "tool_carry_cost": {
+   "Grep": 1.86e-05,
+   "Bash": 0.0
+  },
+  "reads": 0,
+  "rereads": 0,
+  "reread_tokens": 0,
+  "whole_big_reads": 0,
+  "whole_big_read_tokens": 0
+ }
+]

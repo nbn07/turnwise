@@ -1,0 +1,38 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  plugin:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python: ["3.9", "3.12"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python turnwise/tests/test_turnwise.py
+  plugin-windows:
+    # Not yet verified: the hooks call `python3` and the tests use POSIX paths. Kept visible, not blocking.
+    runs-on: windows-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python turnwise/tests/test_turnwise.py
+  harness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+      - run: python bench/harness/run.py --selftest
+      - run: python bench/harness/sessions.py --selftest
+      - run: python bench/tests/test_harness.py
+      - run: python bench/tests/test_sessions.py
+      - run: python bench/tests/test_dependent.py

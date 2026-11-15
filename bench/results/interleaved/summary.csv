@@ -1,0 +1,61 @@
+arm,task,kind,run,passed,cost_usd,turns,duration_s,uncached_input,cache_write,cache_read,output,model,claude_version,session_id,detail
+turnwise,bugfix-small-tomli,bug fix,1,1,0.0817,5,13.1,8,9483,76037,946,claude-opus-5-5,2.1.325,ec50c5d4-fdc5-4156-aae9-8c8feadc0918,14 passed in 0.09s
+baseline,bugfix-small-tomli,bug fix,1,1,0.07,5,11.1,8,7742,70916,845,claude-opus-5-5,2.1.325,376bd7ad-d69a-4e09-aa52-31996212f7fa,14 passed in 0.09s
+baseline,bugfix-largefile-more-itertools,bug fix,1,1,0.0871,4,17.1,6,10134,53866,1275,claude-opus-5-5,2.1.325,4cbf481d-2c58-4361-8509-8f1ed93ab094,"504 passed, 1 skipped in 0.82s"
+turnwise,bugfix-largefile-more-itertools,bug fix,1,1,0.0905,5,16.1,8,10161,76598,1213,claude-opus-5-5,2.1.325,b4764ed2-ca2e-4910-890c-4b79f736a907,"504 passed, 1 skipped in 0.85s"
+turnwise,feature-humanize-metric-v2,feature,1,1,0.1602,5,32.3,10,14438,105540,3324,claude-opus-5-5,2.1.325,16e7c139-80e9-44eb-9938-76194c417b76,191 passed in 0.06s
+baseline,feature-humanize-metric-v2,feature,1,1,0.1663,5,36.1,10,14951,102855,3532,claude-opus-5-5,2.1.325,2a67665b-47f0-42ba-a0a6-1a00d036ee83,191 passed in 0.07s
+baseline,question-click-option-sources,question,1,1,0.0724,4,15.4,6,7636,50815,1193,claude-opus-5-5,2.1.325,3ea2d5f9-c299-4aa6-bda2-5aabb0dcf909,all facts present
+turnwise,question-click-option-sources,question,1,1,0.0711,4,10.3,6,8166,52265,981,claude-opus-5-5,2.1.325,bee46f72-91b0-4060-aab2-074869dbf850,all facts present
+turnwise,refactor-itsdangerous-rename,refactor,1,1,0.061,4,9.4,8,6994,71796,575,claude-opus-5-5,2.1.325,f0c3e6c8-5724-4b6f-b755-696ba38224f2,297 passed in 0.31s
+baseline,refactor-itsdangerous-rename,refactor,1,1,0.0591,4,12.1,8,6504,69803,621,claude-opus-5-5,2.1.325,b9f25a34-e8b2-4063-868a-d4bb0d0cb9b8,297 passed in 0.32s
+baseline,bugfix-small-tomli,bug fix,2,1,0.113,9,25.2,12,9631,115068,2081,claude-opus-5-5,2.1.325,81794cad-2a42-4dc7-90a2-2d267150b0fb,14 passed in 0.08s
+turnwise,bugfix-small-tomli,bug fix,2,1,0.0738,5,11.4,8,8246,72839,894,claude-opus-5-5,2.1.325,24d6742e-ac5a-4acd-8c1f-c5b1fc1120d3,14 passed in 0.09s
+turnwise,bugfix-largefile-more-itertools,bug fix,2,1,0.0989,6,15.9,10,10512,99895,1309,claude-opus-5-5,2.1.325,3d6e1763-b2f3-4db4-b593-c61532acf43c,"504 passed, 1 skipped in 0.82s"
+baseline,bugfix-largefile-more-itertools,bug fix,2,1,0.0918,5,16.6,8,9838,75976,1365,claude-opus-5-5,2.1.325,2c9fac1f-fbfe-4b4e-ac5a-55444be7cd5d,"504 passed, 1 skipped in 0.83s"
+baseline,feature-humanize-metric-v2,feature,2,1,0.1574,5,32.2,10,13885,101604,3364,claude-opus-5-5,2.1.325,37a8230d-7755-48b3-b211-fa4d74ff09e2,191 passed in 0.06s
+turnwise,feature-humanize-metric-v2,feature,2,1,0.1766,6,36.4,12,14443,131595,3886,claude-opus-5-5,2.1.325,4d35dcac-6e7d-45b5-9f5c-79d44a2f38c3,191 passed in 0.06s
+turnwise,question-click-option-sources,question,2,1,0.0713,3,10.4,6,8350,52222,946,claude-opus-5-5,2.1.325,6c9de072-9a58-463d-9b24-ddf383e86bb7,all facts present
+baseline,question-click-option-sources,question,2,1,0.0682,4,12.1,6,7583,50667,995,claude-opus-5-5,2.1.325,5c8d17a7-3864-4c40-89eb-589d7092ef87,all facts present
+baseline,refactor-itsdangerous-rename,refactor,2,1,0.0588,4,12.9,8,6570,69891,592,claude-opus-5-5,2.1.325,5dc4ab99-6f72-45c4-bdae-99b4c8a49a5c,297 passed in 0.31s
+turnwise,refactor-itsdangerous-rename,refactor,2,1,0.061,4,8.8,8,7040,71812,565,claude-opus-5-5,2.1.325,69853f07-fd78-4a64-a72c-8e272a36e1af,297 passed in 0.31s
+turnwise,bugfix-small-tomli,bug fix,3,1,0.0742,5,11.2,8,8329,72795,890,claude-opus-5-5,2.1.325,8996dc6c-f781-4192-81bc-eb9d20f3de8a,14 passed in 0.09s
+baseline,bugfix-small-tomli,bug fix,3,1,0.0789,6,16.1,8,7978,71129,1232,claude-opus-5-5,2.1.325,c1ae6ef6-5036-4ef3-a9ff-a8e1cbac81f6,14 passed in 0.09s
+baseline,bugfix-largefile-more-itertools,bug fix,3,1,0.0802,4,15.2,6,9471,53351,1100,claude-opus-5-5,2.1.325,5b8df48e-98eb-4ce4-a831-ef7e7c950128,"504 passed, 1 skipped in 0.82s"
+turnwise,bugfix-largefile-more-itertools,bug fix,3,1,0.0811,4,12.2,6,10102,54721,973,claude-opus-5-5,2.1.325,40f8930f-66f0-48de-956e-d16eb312aa9c,"504 passed, 1 skipped in 0.83s"
+turnwise,feature-humanize-metric-v2,feature,3,1,0.1652,5,35.1,10,14235,105606,3628,claude-opus-5-5,2.1.325,bdb61dd0-96fa-4b71-9d29-ba2359f9be5a,191 passed in 0.07s
+baseline,feature-humanize-metric-v2,feature,3,1,0.1789,6,37.8,12,15266,130450,3802,claude-opus-5-5,2.1.325,c747fd79-4b85-4b7b-9ded-331ee475c6a6,191 passed in 0.06s
+baseline,question-click-option-sources,question,3,1,0.0672,4,13.1,6,7486,50817,971,claude-opus-5-5,2.1.325,013fdf03-6c22-4f2b-b3f9-f6d70a7643b3,all facts present
+turnwise,question-click-option-sources,question,3,1,0.0854,5,13.7,8,9007,73787,1272,claude-opus-5-5,2.1.325,95492fd5-af05-4faa-9c2b-85c381bf0336,all facts present
+turnwise,refactor-itsdangerous-rename,refactor,3,1,0.0546,3,8.0,6,6807,51935,499,claude-opus-5-5,2.1.325,b8116d01-c758-4cb2-bc14-95eef77b37c6,297 passed in 0.29s
+baseline,refactor-itsdangerous-rename,refactor,3,1,0.0597,4,11.9,8,6610,69820,624,claude-opus-5-5,2.1.325,86488071-09a0-4a85-82ed-4c71ebb27ca5,297 passed in 0.31s
+baseline,bugfix-small-tomli,bug fix,4,1,0.0636,4,10.0,6,7364,51491,814,claude-opus-5-5,2.1.325,695dcba9-526f-47b2-9c9b-204e9643ac2d,14 passed in 0.09s
+turnwise,bugfix-small-tomli,bug fix,4,1,0.0753,5,15.1,8,8031,72999,1017,claude-opus-5-5,2.1.325,c25e61cb-ec45-4137-9e9e-17c96171897f,14 passed in 0.09s
+turnwise,bugfix-largefile-more-itertools,bug fix,4,1,0.0932,5,16.5,8,10279,76750,1314,claude-opus-5-5,2.1.325,a921d2ba-8cfa-4443-ae5e-f8ea6e2023f6,"504 passed, 1 skipped in 0.81s"
+baseline,bugfix-largefile-more-itertools,bug fix,4,1,0.1065,6,19.0,10,10776,99541,1626,claude-opus-5-5,2.1.325,f4567959-1475-45c6-84ae-1dd171a15b68,"504 passed, 1 skipped in 0.81s"
+baseline,feature-humanize-metric-v2,feature,4,1,0.1626,5,36.3,10,13960,101572,3601,claude-opus-5-5,2.1.325,4bdafddb-f375-4f03-b6c0-f7554afe866c,191 passed in 0.06s
+turnwise,feature-humanize-metric-v2,feature,4,1,0.1341,4,26.1,8,12603,77854,2752,claude-opus-5-5,2.1.325,5ebc8f92-26f6-405e-9841-551affe9fa1c,191 passed in 0.06s
+turnwise,question-click-option-sources,question,4,1,0.0709,4,11.1,6,7976,52044,1019,claude-opus-5-5,2.1.325,58987ac7-bded-47af-9557-2703cd431e3e,all facts present
+baseline,question-click-option-sources,question,4,1,0.0734,4,12.5,6,8002,50912,1152,claude-opus-5-5,2.1.325,942a5abf-9bef-4a54-860d-8bef0809b9f4,all facts present
+baseline,refactor-itsdangerous-rename,refactor,4,1,0.0584,4,13.1,8,6518,69828,585,claude-opus-5-5,2.1.325,be946547-77b0-4f47-88a2-c6dbd10b54fb,297 passed in 0.31s
+turnwise,refactor-itsdangerous-rename,refactor,4,1,0.0624,4,11.7,8,7219,71587,590,claude-opus-5-5,2.1.325,f69b5f00-8ea9-49c2-bbab-30901f6131f4,297 passed in 0.31s
+turnwise,bugfix-small-tomli,bug fix,5,1,0.0747,5,11.2,8,8288,73492,918,claude-opus-5-5,2.1.325,9a133770-4161-4bd4-93f3-d115b67c344a,14 passed in 0.09s
+baseline,bugfix-small-tomli,bug fix,5,1,0.0738,5,11.9,8,7882,71205,1001,claude-opus-5-5,2.1.325,9a74061a-ba41-4b62-8129-e0e7fdca4df8,14 passed in 0.09s
+baseline,bugfix-largefile-more-itertools,bug fix,5,1,0.101,6,17.3,10,10175,98959,1506,claude-opus-5-5,2.1.325,f11e02df-e81d-4d15-8a44-43f2e4035a5d,"504 passed, 1 skipped in 0.82s"
+turnwise,bugfix-largefile-more-itertools,bug fix,5,1,0.091,5,17.7,8,10295,76739,1199,claude-opus-5-5,2.1.325,924a7e12-79e5-4366-ba0e-d328b031ca85,"504 passed, 1 skipped in 0.80s"
+turnwise,feature-humanize-metric-v2,feature,5,1,0.1623,5,32.4,10,14720,106087,3359,claude-opus-5-5,2.1.325,9fe529f9-a18a-406d-8b81-1aa721364be4,191 passed in 0.06s
+baseline,feature-humanize-metric-v2,feature,5,1,0.1933,9,40.6,14,15608,153334,4212,claude-opus-5-5,2.1.325,7515b2f7-edbe-4c40-a210-9b683a6d04a8,191 passed in 0.06s
+baseline,question-click-option-sources,question,5,1,0.0726,4,13.6,6,7997,50908,1110,claude-opus-5-5,2.1.325,d70b51bd-58fe-431a-a75b-3488ea1dfe0f,all facts present
+turnwise,question-click-option-sources,question,5,1,0.0766,5,12.0,8,8164,71643,1064,claude-opus-5-5,2.1.325,0bf9201c-548b-44e6-a950-264d4ecd9bf7,all facts present
+turnwise,refactor-itsdangerous-rename,refactor,5,1,0.0645,4,13.2,8,7197,71744,702,claude-opus-5-5,2.1.325,88f5c6a1-9173-4266-8ec4-5b6ccd5e299e,297 passed in 0.31s
+baseline,refactor-itsdangerous-rename,refactor,5,1,0.0581,4,10.7,8,6484,69812,578,claude-opus-5-5,2.1.325,4bb668f0-aa05-4dc9-89a5-70b449435929,297 passed in 0.28s
+baseline,bugfix-small-tomli,bug fix,6,1,0.0718,5,13.9,8,7398,70519,1028,claude-opus-5-5,2.1.325,ef9ba83f-9c3f-460a-a271-32f04d1cbfc3,14 passed in 0.08s
+turnwise,bugfix-small-tomli,bug fix,6,1,0.0755,5,12.5,8,8426,72843,931,claude-opus-5-5,2.1.325,2c94d291-415b-4e90-bb5b-6a22ffda026b,14 passed in 0.09s
+turnwise,bugfix-largefile-more-itertools,bug fix,6,1,0.09,5,16.5,8,10176,76603,1180,claude-opus-5-5,2.1.325,dd78d5ef-097d-4667-9fcf-26199086c44e,"504 passed, 1 skipped in 0.84s"
+baseline,bugfix-largefile-more-itertools,bug fix,6,1,0.1144,7,21.0,12,11152,122780,1693,claude-opus-5-5,2.1.325,e6687c3a-e6e2-431d-b7c8-14f47d7e0882,"504 passed, 1 skipped in 0.83s"
+baseline,feature-humanize-metric-v2,feature,6,1,0.174,6,37.8,12,14411,128363,3794,claude-opus-5-5,2.1.325,ad3cd606-6d0e-40ee-b664-95589a65140d,191 passed in 0.06s
+turnwise,feature-humanize-metric-v2,feature,6,1,0.1475,5,30.9,10,13038,101840,3078,claude-opus-5-5,2.1.325,fef455fc-7c45-47b7-85ef-017167f16cd6,191 passed in 0.06s
+turnwise,question-click-option-sources,question,6,1,0.073,4,11.8,6,8382,52447,1016,claude-opus-5-5,2.1.325,12f16672-9754-4923-8476-7af8b61d5063,all facts present
+baseline,question-click-option-sources,question,6,1,0.079,5,14.2,8,8228,71375,1167,claude-opus-5-5,2.1.325,362870f5-b26b-4f8f-8eb9-e251d779a154,all facts present
+baseline,refactor-itsdangerous-rename,refactor,6,1,0.0596,4,10.9,8,6617,69844,617,claude-opus-5-5,2.1.325,eb70bc6e-eb0d-4c20-9e11-16dc06a14b13,297 passed in 0.31s
+turnwise,refactor-itsdangerous-rename,refactor,6,1,0.0543,3,9.0,6,6829,51955,482,claude-opus-5-5,2.1.325,2178309d-cced-4e79-b755-f3cabcfac647,297 passed in 0.29s

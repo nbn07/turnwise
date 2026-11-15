@@ -1,0 +1,13 @@
+session,scenario,way,trial,passed,cost_usd,requests,duration_s,context_before,first_cache_read,first_cache_write,cache_write,cache_read,output,model,claude_version,detail
+click,build,build,0,1,1.1665,11,83.1,0,13057,5562,161399,1008239,7881,claude-opus-5-5,2.1.325,"context 174,823 tokens"
+click,model-switch,stay,1,1,0.1251,3,10.2,174823,174456,426,1195,524674,709,claude-opus-5-5,2.1.325,all names present
+click,model-switch,switch,1,1,0.4483,3,11.4,174823,13057,161167,162069,362092,691,claude-sonnet-5-5,2.1.325,all names present
+more-itertools,build,build,0,1,1.2733,12,64.3,0,13057,5596,190784,1228114,3675,claude-opus-5-5,2.1.325,"context 204,183 tokens"
+more-itertools,model-switch,switch,1,1,0.534,3,16.8,204183,13057,190704,192460,421665,1066,claude-sonnet-5-5,2.1.325,all names present
+more-itertools,model-switch,stay,1,1,0.1587,3,17.1,204183,203841,404,1975,613394,1305,claude-opus-5-5,2.1.325,all names present
+click,build,build,0,1,1.0144,8,75.1,0,13057,5561,158712,484312,6191,claude-opus-5-5,2.1.325,"context 172,068 tokens"
+more-itertools,build,build,0,1,1.124,6,49.2,0,13057,5597,190446,497787,3599,claude-opus-5-5,2.1.325,"context 203,963 tokens"
+click,stale,resume,1,1,0.9719,5,25.2,172068,13057,159110,161132,705744,1253,claude-opus-5-5,2.1.325,56 passed in 0.06s
+click,stale,fresh,1,1,0.0861,4,13.2,0,13057,5594,10371,76848,935,claude-opus-5-5,2.1.325,56 passed in 0.06s
+more-itertools,stale,fresh,1,1,0.0896,4,15.9,0,13057,5603,9639,74912,1314,claude-opus-5-5,2.1.325,"504 passed, 1 skipped in 0.80s"
+more-itertools,stale,resume,1,1,1.0846,3,28.6,203963,13057,191001,192688,422423,1835,claude-opus-5-5,2.1.325,"504 passed, 1 skipped in 0.83s"

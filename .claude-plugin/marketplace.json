@@ -1,0 +1,24 @@
+{
+  "name": "turnwise",
+  "owner": {
+    "name": "Naveen Babu Narayanan Nair"
+  },
+  "metadata": {
+    "description": "A session-cost guard and meter for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "turnwise",
+      "source": "./turnwise",
+      "description": "Shows where a Claude Code session's money goes by cause, and warns before resuming a large session whose cache has expired or switching models mid-session.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": [
+        "cost",
+        "tokens",
+        "prompt-cache",
+        "usage"
+      ]
+    }
+  ]
+}

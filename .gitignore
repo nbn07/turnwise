@@ -1,0 +1,18 @@
+# Raw transcripts contain the local username, file paths and Claude Code's system prompt.
+# Publish summaries only; share a transcript deliberately, after reading it.
+bench/results/**/raw/
+# Names private projects on the machine it was measured on.
+bench/results/cost_anatomy_local.json
+bench/results/**/summary.before-fix.csv
+
+bench/.cache/
+bench/.venv/
+bench/.competitors/
+.turnwise/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Kept locally, not published.
+SKILL_BUILD_PROMPT.md
+report/LAUNCH-POST-DRAFT.md

@@ -1,0 +1,19 @@
+arm,task,kind,run,passed,cost_usd,turns,duration_s,uncached_input,cache_write,cache_read,output,model,claude_version,session_id,detail
+turnwise,long-more-itertools-three-bugs,bug fix x3,1,1,0.1175,9,26.9,14,9729,138237,2052,claude-opus-5-5,2.1.325,2f78f20c-c87a-47cd-94e4-ed650e2b4bc6,"504 passed, 1 skipped in 0.81s"
+baseline,long-more-itertools-three-bugs,bug fix x3,1,1,0.1167,10,23.9,12,10752,119007,1948,claude-opus-5-5,2.1.325,42953fc7-5571-4a38-b490-06bedd0c06ab,"504 passed, 1 skipped in 0.83s"
+baseline,long-click-three-bugs,bug fix x3,1,1,0.0947,5,17.8,10,9828,95978,1311,claude-opus-5-5,2.1.325,cc26d851-d1e0-48f4-94ef-175114f43539,"588 passed, 22 skipped, 1 xfailed in 0.65s"
+turnwise,long-click-three-bugs,bug fix x3,1,1,0.0913,6,17.2,10,9177,95960,1301,claude-opus-5-5,2.1.325,53f3a2d8-2566-4697-909e-a9578e4c92a6,"588 passed, 22 skipped, 1 xfailed in 0.65s"
+turnwise,long-humanize-feature-and-bug,feature + bug fix,1,1,0.1515,5,30.5,10,13303,98990,3238,claude-opus-5-5,2.1.325,c5b438a9-fba9-41bb-abe0-a69b79271af8,191 passed in 0.07s
+baseline,long-humanize-feature-and-bug,feature + bug fix,1,1,0.2225,11,48.1,14,18390,155257,4956,claude-opus-5-5,2.1.325,279a45b1-08da-4106-a4a8-a45feb151c4a,191 passed in 0.07s
+baseline,long-more-itertools-three-bugs,bug fix x3,2,1,0.0945,6,18.1,8,9907,72916,1510,claude-opus-5-5,2.1.325,5ddb6510-f1c0-4eb8-9560-481e2e7b7710,"504 passed, 1 skipped in 0.83s"
+turnwise,long-more-itertools-three-bugs,bug fix x3,2,1,0.1254,11,22.6,14,11044,141466,2084,claude-opus-5-5,2.1.325,c57bf399-9ca8-48e7-a558-23b24debae49,"504 passed, 1 skipped in 0.81s"
+turnwise,long-click-three-bugs,bug fix x3,2,1,0.1139,10,22.4,12,10108,118207,1977,claude-opus-5-5,2.1.325,c2f8143e-5479-4729-ae10-57043306708a,"588 passed, 22 skipped, 1 xfailed in 0.64s"
+baseline,long-click-three-bugs,bug fix x3,2,1,0.0955,8,18.3,10,9270,93989,1510,claude-opus-5-5,2.1.325,31c3c8b6-1e48-4cca-96de-04f2de1ced4a,"588 passed, 22 skipped, 1 xfailed in 0.60s"
+baseline,long-humanize-feature-and-bug,feature + bug fix,2,1,0.2232,11,47.1,14,18083,162099,4998,claude-opus-5-5,2.1.325,c58e595e-7ad7-4fe0-a49f-ae692b34dc4d,191 passed in 0.06s
+turnwise,long-humanize-feature-and-bug,feature + bug fix,2,1,0.1675,5,37.5,10,14472,100950,3729,claude-opus-5-5,2.1.325,b6d568b0-5817-4154-9e9c-c798e5bf6b00,191 passed in 0.06s
+turnwise,long-more-itertools-three-bugs,bug fix x3,3,1,0.1054,7,20.4,10,10863,95039,1594,claude-opus-5-5,2.1.325,10350b17-4534-4a51-b9d4-0a032b17b584,"504 passed, 1 skipped in 0.82s"
+baseline,long-more-itertools-three-bugs,bug fix x3,3,1,0.1114,9,24.4,10,10234,95352,2049,claude-opus-5-5,2.1.325,d3f5482f-b706-4802-aefa-9246fd0732f2,"504 passed, 1 skipped in 0.84s"
+baseline,long-click-three-bugs,bug fix x3,3,1,0.0934,6,20.9,10,9245,93796,1411,claude-opus-5-5,2.1.325,12239f82-227a-4e82-b1ee-1a31f0872cf5,"588 passed, 22 skipped, 1 xfailed in 0.63s"
+turnwise,long-click-three-bugs,bug fix x3,3,1,0.0758,5,14.0,8,8050,73279,1035,claude-opus-5-5,2.1.325,a9d7a002-8a1e-4769-9d4d-4f14eaa62919,"588 passed, 22 skipped, 1 xfailed in 0.61s"
+turnwise,long-humanize-feature-and-bug,feature + bug fix,3,1,0.1624,6,36.9,12,13723,126486,3407,claude-opus-5-5,2.1.325,daf5932d-f1f2-4fc9-ad57-9d1c7c0a0244,191 passed in 0.07s
+baseline,long-humanize-feature-and-bug,feature + bug fix,3,1,0.278,12,58.0,16,24814,201390,5660,claude-opus-5-5,2.1.325,f6796835-14f4-4f60-984c-bde2eee7e6a9,191 passed in 0.07s

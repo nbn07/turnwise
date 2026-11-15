@@ -1,0 +1,12 @@
+trial,way,passed,cost_usd,requests,duration_s,pick,note_written,note_has_pick,model,claude_version,detail
+1,build,1,0.1106,6,13.9,veritoxal,1,1,claude-opus-5-5,2.1.325,pick veritoxal; agent note written and names the pick
+1,fresh-script,1,0.0908,6,17.6,veritoxal,1,1,claude-opus-5-5,2.1.325,veritoxal exists and behaves as described
+1,fresh-agent,1,0.0624,5,17.6,veritoxal,1,1,claude-opus-5-5,2.1.325,veritoxal exists and behaves as described
+1,resume,1,0.0565,4,16.3,veritoxal,1,1,claude-opus-5-5,2.1.325,veritoxal exists and behaves as described
+2,build,1,0.0754,5,9.1,veraxilomb,0,0,claude-opus-5-5,2.1.325,pick veraxilomb; agent note not written
+2,resume,1,0.0407,4,11.9,veraxilomb,0,0,claude-opus-5-5,2.1.325,veraxilomb exists and behaves as described
+2,fresh-script,1,0.0918,6,22.9,veraxilomb,0,0,claude-opus-5-5,2.1.325,veraxilomb exists and behaves as described
+3,build,1,0.0989,6,13.7,truthiwex,1,1,claude-opus-5-5,2.1.325,pick truthiwex; agent note written and names the pick
+3,resume,1,0.0403,4,13.0,truthiwex,1,1,claude-opus-5-5,2.1.325,truthiwex exists and behaves as described
+3,fresh-script,1,0.0874,6,20.0,truthiwex,1,1,claude-opus-5-5,2.1.325,truthiwex exists and behaves as described
+3,fresh-agent,1,0.0866,6,24.2,truthiwex,1,1,claude-opus-5-5,2.1.325,truthiwex exists and behaves as described

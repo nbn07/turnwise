@@ -1,0 +1,15 @@
+{
+  "name": "turnwise",
+  "version": "0.1.0",
+  "description": "A session-cost guard and meter for Claude Code. Shows where a session's money goes by cause, and warns before resuming a large session whose cache has expired or switching models mid-session.",
+  "license": "MIT",
+  "author": {
+    "name": "Naveen Babu Narayanan Nair"
+  },
+  "keywords": [
+    "cost",
+    "tokens",
+    "prompt-cache",
+    "usage"
+  ]
+}

@@ -1,0 +1,16 @@
+trial,way,passed,cost_usd,requests,duration_s,pick,note_written,note_has_pick,model,claude_version,detail
+1,build,1,0.0984,6,10.2,veltrazomik,1,1,claude-opus-5-5,2.1.325,pick veltrazomik; agent note written and names the pick
+1,fresh-bare,0,0.1373,8,37.5,veltrazomik,1,1,claude-opus-5-5,2.1.325,no function named veltrazomik; found instead: truvelquin
+1,fresh-script,1,0.1017,9,28.4,veltrazomik,1,1,claude-opus-5-5,2.1.325,veltrazomik exists and behaves as described
+1,fresh-agent,1,0.0761,6,22.1,veltrazomik,1,1,claude-opus-5-5,2.1.325,veltrazomik exists and behaves as described
+1,resume,1,0.034,3,10.4,veltrazomik,1,1,claude-opus-5-5,2.1.325,veltrazomik exists and behaves as described
+2,build,1,0.0954,6,13.3,vorplesker,1,1,claude-opus-5-5,2.1.325,pick vorplesker; agent note written and names the pick
+2,fresh-script,1,0.08,5,16.8,vorplesker,1,1,claude-opus-5-5,2.1.325,vorplesker exists and behaves as described
+2,fresh-agent,1,0.0854,6,24.2,vorplesker,1,1,claude-opus-5-5,2.1.325,vorplesker exists and behaves as described
+2,resume,1,0.0375,3,12.6,vorplesker,1,1,claude-opus-5-5,2.1.325,vorplesker exists and behaves as described
+2,fresh-bare,0,0.0873,7,25.3,vorplesker,1,1,claude-opus-5-5,2.1.325,no function named vorplesker
+3,build,1,0.0861,5,10.0,trovelquin,1,1,claude-opus-5-5,2.1.325,pick trovelquin; agent note written and names the pick
+3,fresh-agent,1,0.1129,6,21.5,trovelquin,1,1,claude-opus-5-5,2.1.325,trovelquin exists and behaves as described
+3,resume,1,0.0301,3,10.5,trovelquin,1,1,claude-opus-5-5,2.1.325,trovelquin exists and behaves as described
+3,fresh-bare,0,0.1243,9,35.2,trovelquin,1,1,claude-opus-5-5,2.1.325,no function named trovelquin; found instead: zorvantile
+3,fresh-script,1,0.0771,7,19.6,trovelquin,1,1,claude-opus-5-5,2.1.325,trovelquin exists and behaves as described
