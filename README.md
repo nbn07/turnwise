@@ -4,6 +4,10 @@ A Claude Code plugin that shows where a session's money goes and warns you befor
 
 It is a session-cost guard and meter, not a general token saver. Every claim below links to how it was measured, including the ones that did not hold up.
 
+![turnwise cost report: spend by billing category, by session and by cause. Cache rebuilds after idle gaps are 17% of spend, most of it in one long session.](docs/cost-report.svg)
+
+*The cost report on the author's machine, at API list prices. Rebuilding the cache after idle gaps was 17% of all spend, most of it in one long session. Project names are anonymised.*
+
 ## Install
 
 In Claude Code 2.1.275 or later:
