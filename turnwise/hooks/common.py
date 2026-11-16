@@ -1,6 +1,12 @@
 """Shared helpers for turnwise hooks. Stdlib only. Every hook fails open: on any error, do nothing."""
 import datetime, json, os, sys
 
+for _stream in (sys.stdout, sys.stderr):      # Windows defaults to the ANSI code page; Claude Code reads UTF-8
+    try:
+        _stream.reconfigure(encoding="utf-8")
+    except (AttributeError, ValueError):
+        pass
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 from cost_anatomy import price  # noqa: E402
@@ -14,14 +20,14 @@ DEFAULTS = {"rules": True, "guard": False, "switch_guard": True, "trim": False, 
 
 def load(path, default):
     try:
-        return {**default, **json.load(open(path))}
+        return {**default, **json.load(open(path, encoding="utf-8"))}
     except (OSError, ValueError):
         return dict(default)
 
 
 def save(path, data):
     os.makedirs(HOME, exist_ok=True)
-    json.dump(data, open(path, "w"), indent=1)
+    json.dump(data, open(path, "w", encoding="utf-8"), indent=1)
 
 
 def config():
@@ -31,7 +37,7 @@ def config():
 def session_state(path):
     """Last request of a transcript: context size, model, cache lifetime, idle time, opening context size."""
     last = first = None
-    for line in open(path, errors="replace"):
+    for line in open(path, errors="replace", encoding="utf-8"):
         if '"usage"' not in line:
             continue
         try:

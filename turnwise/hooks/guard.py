@@ -53,7 +53,7 @@ def decide(d):
     cwd = d.get("cwd") or os.getcwd()
     try:
         note = write_handoff(d["transcript_path"], cwd)
-        with open(os.path.join(cwd, note)) as f:
+        with open(os.path.join(cwd, note), encoding="utf-8") as f:
             by_agent = AGENT_MARK in f.readline()
         note_line = (f"A handoff note{' written by the agent' if by_agent else ''} is in {note}. "
                      f"In a new session, say: continue from {note} ")
@@ -74,7 +74,7 @@ def decide(d):
 
 
 try:
-    result = decide(json.load(sys.stdin))
+    result = decide(json.loads(sys.stdin.buffer.read()))
 except Exception:
     result = None
 if result and result[0] == "context":

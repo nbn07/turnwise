@@ -24,7 +24,7 @@ def main():
     shape, calls, sessions = None, collections.Counter(), 0
     for f in files:
         used = False
-        for line in open(f, errors="replace"):
+        for line in open(f, errors="replace", encoding="utf-8"):
             if '"api-request-shape"' in line[:60]:
                 try:
                     d = json.loads(line)

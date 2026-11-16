@@ -74,9 +74,9 @@ def save_full(cwd, tool_use_id, text):
     os.makedirs(d, exist_ok=True)
     exclude = os.path.join(cwd, ".git", "info", "exclude")
     if os.path.isdir(os.path.dirname(exclude)):
-        have = open(exclude).read() if os.path.exists(exclude) else ""
+        have = open(exclude, encoding="utf-8").read() if os.path.exists(exclude) else ""
         if ".turnwise/" not in have:
-            open(exclude, "a").write(("" if have.endswith("\n") or not have else "\n") + ".turnwise/\n")
+            open(exclude, "a", encoding="utf-8").write(("" if have.endswith("\n") or not have else "\n") + ".turnwise/\n")
     cutoff = time.time() - KEEP_DAYS * 86400
     for f in os.listdir(d):
         fp = os.path.join(d, f)
@@ -84,8 +84,8 @@ def save_full(cwd, tool_use_id, text):
             os.remove(fp)
     name = re.sub(r"[^A-Za-z0-9_-]", "", tool_use_id or "")[-24:] or str(int(time.time()))
     path = os.path.join(d, name + ".txt")
-    open(path, "w").write(text)
-    return os.path.join(".turnwise", "full", name + ".txt")
+    open(path, "w", encoding="utf-8").write(text)
+    return ".turnwise/full/" + name + ".txt"  # shown to the agent: forward slashes on every OS
 
 
 def trim(text, cwd, tool_use_id):
@@ -101,7 +101,7 @@ def trim(text, cwd, tool_use_id):
 
 def main():
     from common import HOME, config
-    d = json.load(sys.stdin)
+    d = json.loads(sys.stdin.buffer.read())
     if not config().get("trim") or os.environ.get("TURNWISE_OFF"):
         return
     name, resp = d.get("tool_name", ""), d.get("tool_response")
@@ -137,7 +137,7 @@ def main():
     else:
         return
     os.makedirs(HOME, exist_ok=True)
-    open(os.path.join(HOME, "trim.log"), "a").write(json.dumps(
+    open(os.path.join(HOME, "trim.log"), "a", encoding="utf-8").write(json.dumps(
         {"ts": int(time.time()), "session": d.get("session_id"), "tool": name, "before": before, "after": after}) + "\n")
     print(json.dumps({"hookSpecificOutput": {"hookEventName": "PostToolUse", "updatedToolOutput": resp}}))
 

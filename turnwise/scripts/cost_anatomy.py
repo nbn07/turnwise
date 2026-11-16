@@ -53,7 +53,7 @@ def analyze(path):
     user_prompts = 0
     out_split = collections.Counter()
     dup_tools = set()
-    for line in open(path, errors="replace"):
+    for line in open(path, errors="replace", encoding="utf-8"):
         try:
             d = json.loads(line)
         except ValueError:
@@ -249,7 +249,7 @@ def main():
     firsts = [r["ctx_first"] for r in rows if r["ctx_first"] > 5000]
     print(f"FIXED PREFIX: first request of a session carries a median {int(statistics.median(firsts)):,} tokens before any work")
     if a.json:
-        json.dump(rows, open(a.json, "w"), indent=1)
+        json.dump(rows, open(a.json, "w", encoding="utf-8"), indent=1)
 
 
 if __name__ == "__main__":

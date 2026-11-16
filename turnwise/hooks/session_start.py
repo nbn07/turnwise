@@ -4,9 +4,9 @@ import json, os, sys
 
 try:
     from common import ROOT, config
-    json.load(sys.stdin)
+    json.loads(sys.stdin.buffer.read())
     if config()["rules"] and not os.environ.get("TURNWISE_OFF"):
-        rules = open(os.path.join(ROOT, "rules.md")).read()
+        rules = open(os.path.join(ROOT, "rules.md"), encoding="utf-8").read()
         print(json.dumps({"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": rules}}))
 except Exception:
     pass

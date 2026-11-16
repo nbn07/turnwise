@@ -44,7 +44,7 @@ def write_handoff(transcript, project_dir):
     only what happened after it is added. Otherwise the whole note is built from the transcript.
     """
     events, session, note_at = [], "", -1          # events: ("ask", text) | ("file", path) | ("answer", text)
-    for line in open(transcript, errors="replace"):
+    for line in open(transcript, errors="replace", encoding="utf-8"):
         try:
             d = json.loads(line)
         except ValueError:
@@ -75,12 +75,12 @@ def write_handoff(transcript, project_dir):
     os.makedirs(out_dir, exist_ok=True)
     exclude = os.path.join(project_dir, ".git", "info", "exclude")
     if os.path.isdir(os.path.dirname(exclude)):
-        have = open(exclude).read() if os.path.exists(exclude) else ""
+        have = open(exclude, encoding="utf-8").read() if os.path.exists(exclude) else ""
         if ".turnwise/" not in have:
-            with open(exclude, "a") as f:
+            with open(exclude, "a", encoding="utf-8") as f:
                 f.write(("" if have.endswith("\n") or not have else "\n") + ".turnwise/\n")
     path = os.path.join(out_dir, "handoff.md")
-    rel = lambda f: os.path.relpath(f, project_dir) if f.startswith(project_dir) else f
+    rel = lambda f: os.path.relpath(f, project_dir).replace(os.sep, "/") if f.startswith(project_dir) else f
     now = datetime.datetime.now().astimezone().strftime("%Y-%m-%d %H:%M %Z")
 
     # A note cannot hold everything. The saved transcript can, so say where it is and how to use it cheaply.
@@ -90,7 +90,7 @@ def write_handoff(transcript, project_dir):
 
     agent_note = ""
     if os.path.exists(path):
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             existing = f.read()
         first = existing.split("\n", 1)[0]
         if AGENT_MARK in first and session and f"session {session} " in first + " ":
@@ -134,9 +134,9 @@ def write_handoff(transcript, project_dir):
         lines += ["", "## Files created or changed"] + ([f"- {rel(f)}" for f in files[-MAX_FILES:]] or ["- none"])
         lines += ["", "## Last answer", _cap(answers[-1] if answers else "", MAX_ANSWER_CHARS)]
         lines += ["", "## If this note is not enough"] + pointer
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
-    return os.path.relpath(path, project_dir)
+    return os.path.relpath(path, project_dir).replace(os.sep, "/")
 
 
 if __name__ == "__main__":

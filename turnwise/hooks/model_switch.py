@@ -9,7 +9,7 @@ MIN_COST = 0.10   # dollars; below this the warning would cost more attention th
 
 try:
     from common import STATE, block, config, load, save, session_state, write_cost
-    d = json.load(sys.stdin)
+    d = json.loads(sys.stdin.buffer.read())
     cfg = config()
     src, dst = d.get("from_model"), d.get("to_model")
     if not cfg["switch_guard"] or os.environ.get("TURNWISE_OFF") or not dst or src == dst:

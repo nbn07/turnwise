@@ -11,6 +11,7 @@ OPUS, SONNET = "claude-opus-5-5", "claude-sonnet-5-5"
 
 
 def read(path, **kw):
+    kw.setdefault("encoding", "utf-8")
     with open(path, **kw) as f:
         return f.read()
 
@@ -56,7 +57,7 @@ class Case(unittest.TestCase):
 
     def transcript(self, entries, name="t.jsonl", raw=None):
         path = os.path.join(self.tmp, name)
-        with open(path, "w") as f:
+        with open(path, "w", encoding="utf-8") as f:
             for e in entries:
                 f.write(json.dumps(e) + "\n")
             if raw:
@@ -65,7 +66,7 @@ class Case(unittest.TestCase):
 
     def run_py(self, rel, *args, stdin=None, env=None, cwd=None):
         return subprocess.run([sys.executable, os.path.join(ROOT, rel), *args], input=stdin, capture_output=True,
-                              text=True, env=env or self.env, cwd=cwd or self.proj, timeout=60)
+                              text=True, encoding="utf-8", env=env or self.env, cwd=cwd or self.proj, timeout=60)
 
     def hook(self, name, payload, env=None):
         return self.run_py(f"hooks/{name}.py", stdin=payload if isinstance(payload, str) else json.dumps(payload), env=env)
@@ -223,14 +224,14 @@ class Guard(Case):
     def test_still_warns_when_handoff_cannot_be_written(self):
         self.on()
         p = self.prompt(self.big_stale())
-        p["cwd"] = "/dev/null/nowhere"
+        p["cwd"] = os.path.join(__file__, "nowhere")
         r = self.hook("guard", p)
         self.assertEqual(r.returncode, 2)
         self.assertNotIn("handoff", r.stderr)
 
     def test_corrupt_settings_fall_back_to_defaults(self):
         os.makedirs(self.home)
-        with open(os.path.join(self.home, "config.json"), "w") as fh:
+        with open(os.path.join(self.home, "config.json"), "w", encoding="utf-8") as fh:
             fh.write("{broken")
         self.assertEqual(self.hook("guard", self.prompt(self.big_stale())).returncode, 0)   # default is off
 
@@ -472,7 +473,7 @@ class Trim(Case):
         for payload in ["", "not json", "[]", json.dumps({"tool_name": "Bash"}),
                         json.dumps({"tool_name": "Bash", "tool_response": {"stdout": None}}),
                         json.dumps({"tool_name": "Bash", "tool_response": "a string"}),
-                        json.dumps(self.bash("pytest", self.LOG) | {"cwd": "/dev/null/nowhere"})]:
+                        json.dumps(self.bash("pytest", self.LOG) | {"cwd": os.path.join(__file__, "nowhere")})]:
             r = self.hook("trim", payload)
             self.assertEqual((r.returncode, r.stdout), (0, ""), payload[:50])
 
@@ -489,7 +490,7 @@ class Trim(Case):
         os.makedirs(d)
         old, new = os.path.join(d, "old.txt"), os.path.join(d, "new.txt")
         for f in (old, new):
-            with open(f, "w") as fh:
+            with open(f, "w", encoding="utf-8") as fh:
                 fh.write("x")
         os.utime(old, (0, 0))
         self.out(self.bash("pytest -v", self.LOG))
@@ -532,7 +533,7 @@ class Handoff(Case):
         """A session where the agent wrote a note, with or without more work after it."""
         note = os.path.join(self.proj, ".turnwise", "handoff.md")
         os.makedirs(os.path.dirname(note), exist_ok=True)
-        with open(note, "w") as f:
+        with open(note, "w", encoding="utf-8") as f:
             f.write(self.AGENT.replace("session sess", f"session {session}"))
         entries = [user("Fix the login bug"),
                    assistant("m1", 500, content=[tool_use("t1", "Edit", file_path=os.path.join(self.proj, "src", "auth.py")),
@@ -580,7 +581,7 @@ class Handoff(Case):
     def test_agent_note_written_another_way_is_kept_with_a_caveat(self):
         note = os.path.join(self.proj, ".turnwise", "handoff.md")
         os.makedirs(os.path.dirname(note))
-        with open(note, "w") as f:
+        with open(note, "w", encoding="utf-8") as f:
             f.write(self.AGENT)
         t = self.transcript([user("Fix the login bug"), assistant("m1", 500, content=[{"type": "text", "text": "Done."}])])
         self.run_py("scripts/handoff.py", t, self.proj)
@@ -606,7 +607,7 @@ class Handoff(Case):
     def test_git_exclude_added_once_and_keeps_existing_lines(self):
         info = os.path.join(self.proj, ".git", "info")
         os.makedirs(info)
-        with open(os.path.join(info, "exclude"), "w") as fh:
+        with open(os.path.join(info, "exclude"), "w", encoding="utf-8") as fh:
             fh.write("*.log")
         t = self.build()
         self.run_py("scripts/handoff.py", t, self.proj)
@@ -630,7 +631,7 @@ class Meter(Case):
         root = os.path.join(self.tmp, "projects")
         for name, entries in files.items():
             os.makedirs(os.path.dirname(os.path.join(root, name)), exist_ok=True)
-            with open(os.path.join(root, name), "w") as f:
+            with open(os.path.join(root, name), "w", encoding="utf-8") as f:
                 for e in entries:
                     f.write(json.dumps(e) + "\n")
         return root
@@ -707,7 +708,7 @@ class Meter(Case):
 
     def test_unknown_models_and_bad_lines_are_skipped(self):
         root = self.root({"p/a.jsonl": [assistant("m1", 900, write=50000), assistant("m2", 890, write=50000, model="<synthetic>")]})
-        with open(os.path.join(root, "p", "a.jsonl"), "a") as fh:
+        with open(os.path.join(root, "p", "a.jsonl"), "a", encoding="utf-8") as fh:
             fh.write("{broken json\n\n[1,2]\n\"text\"\n7\nnull\n")
         r, rows = self.report(root)
         self.assertEqual(r.returncode, 0, r.stderr)
@@ -729,7 +730,7 @@ class Audit(Case):
         shape = {"type": "api-request-shape", "shape": {"system": [{"type": "text", "text": "s" * 4000}], "tools": tools}}
         root = os.path.join(self.tmp, "projects", "p")
         os.makedirs(root)
-        with open(os.path.join(root, "a.jsonl"), "w") as f:
+        with open(os.path.join(root, "a.jsonl"), "w", encoding="utf-8") as f:
             for e in [shape, assistant("m1", 900, write=50000, content=[tool_use("t1", "mcp__used__go")])]:
                 f.write(json.dumps(e) + "\n")
         r = self.run_py("scripts/audit.py", "--root", os.path.dirname(root))
