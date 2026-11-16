@@ -7,6 +7,13 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest]
         python: ["3.9", "3.12"]
+        # ubuntu-latest (26.04) has no Python 3.9 build; test 3.9 on 24.04 instead.
+        exclude:
+          - os: ubuntu-latest
+            python: "3.9"
+        include:
+          - os: ubuntu-24.04
+            python: "3.9"
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -25,7 +32,7 @@ jobs:
           python-version: "3.12"
       - run: python turnwise/tests/test_turnwise.py
   harness:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # Python 3.9 is not available on ubuntu-latest (26.04)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
