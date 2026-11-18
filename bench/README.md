@@ -56,7 +56,7 @@ Useful options: `--tasks ID ...` to run some tasks, `--runs N` to repeat, `--mod
 
 ## Session test
 
-The task runs above cannot show what the guards are for, because a short headless run has no idle gap and no model switch. `sessions.py` measures those directly. It builds two sessions of about 110k tokens, then compares:
+The task runs above cannot show what the guards are for, because a short headless run has no idle gap and no model switch. `sessions.py` measures those directly. It builds two sessions of about 170k and 200k tokens, then compares:
 
 - **Stale session:** the same follow-up bug fix after the cache has expired, by resuming the old session or by starting fresh from turnwise's handoff note.
 - **Model switch:** the same small job while the cache is warm, by continuing on a cheaper model or by staying on the same one.
@@ -69,9 +69,9 @@ python3 bench/harness/sessions.py --selftest
 python3 bench/harness/sessions.py --budget 10
 ```
 
-It takes about an hour, mostly six-minute waits for the cache to expire, and stops when the budget cannot cover the next step. Before every run the repo copy and the session transcript are put back as the build left them. Each row records how many tokens the first request read from cache and wrote to it, which shows whether the cache was in the state the scenario needs. Tests: `python3 bench/tests/test_sessions.py` (12, with a stand-in CLI).
+With the default two trials it takes about an hour, mostly six-minute waits for the cache to expire, and stops when the budget cannot cover the next step. Before every run the repo copy and the session transcript are put back as the build left them. Each row records how many tokens the first request read from cache and wrote to it, which shows whether the cache was in the state the scenario needs. Tests: `python3 bench/tests/test_sessions.py` (12, with a stand-in CLI).
 
-Limits: headless runs use a 5-minute cache at $5 per million tokens written, where desktop sessions use a 1-hour cache at $8, so the dollar gap in real desktop use is about 1.6 times larger. The test shows what each choice costs, not how often a person makes the cheaper one. Two sessions and two trials is a small sample.
+Limits: headless runs use a 5-minute cache at $5 per million tokens written, where desktop sessions use a 1-hour cache at $8, so the dollar gap in real desktop use is about 1.6 times larger. The test shows what each choice costs, not how often a person makes the cheaper one. Two sessions is a small sample. The stale-session results in the report use `--scenarios stale --trials 5` (about two hours and $14).
 
 ## Dependent follow-up test
 

@@ -29,7 +29,7 @@ python3 turnwise/scripts/cost_anatomy.py
 
 | Finding | Result | Where |
 |---|---|---|
-| Resuming a stale session against starting fresh from a handoff note | About $1.00 against $0.09 for the same follow-up bug fix, all passing. One trial in each of two sessions | [Session results](report/SESSION-RESULTS.md) |
+| Resuming a stale session against starting fresh from a handoff note | About $1.09 against $0.10 for the same follow-up bug fix, all 20 runs passing. Five trials in each of two sessions | [Session results](report/SESSION-RESULTS.md) |
 | Switching to a cheaper model against staying, for a small job | $0.45–$0.53 against $0.13–$0.16, all passing. One trial in each of two sessions | [Session results](report/SESSION-RESULTS.md) |
 | A fresh session finishing work that depends on an earlier decision | Passed 3 of 3 with the agent's own note, 3 of 3 with a pointer to the old transcript, 0 of 3 with the script note alone | [Dependent follow-up results](report/DEPENDENT-RESULTS.md) |
 | Share of real spend that went on those cache rebuilds | 12% after idle gaps, 7% after model switches, across $25 of one person's desktop sessions | [Cost anatomy](research/cost-anatomy.md) |

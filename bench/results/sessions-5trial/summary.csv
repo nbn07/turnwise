@@ -1,0 +1,23 @@
+session,scenario,way,trial,passed,cost_usd,requests,duration_s,context_before,first_cache_read,first_cache_write,cache_write,cache_read,output,model,claude_version,detail
+click,build,build,0,1,1.0088,7,58.3,0,13302,5561,158458,510036,5717,claude-opus-5-5,2.1.327,"context 172,087 tokens"
+more-itertools,build,build,0,1,1.2172,10,48.9,0,13302,5596,189970,1005795,3293,claude-opus-5-5,2.1.327,"context 203,750 tokens"
+click,stale,resume,1,1,0.9318,4,20.3,172087,13302,158884,160582,532163,1121,claude-opus-5-5,2.1.327,56 passed in 0.06s
+click,stale,fresh,1,1,0.1046,6,22.0,0,13302,5594,10934,125578,1230,claude-opus-5-5,2.1.327,56 passed in 0.06s
+more-itertools,stale,fresh,1,1,0.0996,5,18.5,0,13302,5602,10000,99075,1481,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.80s"
+more-itertools,stale,resume,1,1,1.0718,3,21.1,203750,13302,190543,191912,421958,1392,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.87s"
+click,stale,fresh,2,1,0.0875,5,18.5,0,13302,5594,10059,99591,854,claude-opus-5-5,2.1.327,56 passed in 0.06s
+click,stale,resume,2,1,0.9348,4,18.8,172087,13302,158884,160978,532763,1164,claude-opus-5-5,2.1.327,56 passed in 0.05s
+more-itertools,stale,resume,2,1,1.0774,3,22.3,203750,13302,190543,192114,422103,1620,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.85s"
+more-itertools,stale,fresh,2,1,0.0931,4,15.7,0,13302,5602,9916,76084,1406,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.81s"
+click,stale,resume,3,1,0.9734,5,26.1,172087,13302,158884,161059,706392,1338,claude-opus-5-5,2.1.327,56 passed in 0.06s
+click,stale,fresh,3,1,0.105,5,17.0,0,13302,6471,12164,106520,1136,claude-opus-5-5,2.1.327,56 passed in 0.05s
+more-itertools,stale,fresh,3,1,0.0878,4,16.6,0,13302,5602,9502,75827,1248,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.83s"
+more-itertools,stale,resume,3,1,1.027,2,17.5,203750,13302,190543,191587,217147,1279,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.83s"
+click,stale,fresh,4,1,0.0971,5,17.4,0,13302,5594,10786,101720,1132,claude-opus-5-5,2.1.327,56 passed in 0.06s
+click,stale,resume,4,1,0.9707,5,22.6,172087,13302,158884,160940,705962,1239,claude-opus-5-5,2.1.327,56 passed in 0.06s
+more-itertools,stale,resume,4,1,1.0747,3,21.4,203750,13302,190543,192194,421770,1467,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.85s"
+more-itertools,stale,fresh,4,1,0.1251,7,23.7,0,13302,5602,11507,147740,1891,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.82s"
+click,stale,resume,5,1,1.7816,5,375.8,172087,13302,158884,321613,545630,1389,claude-opus-5-5,2.1.327,56 passed in 0.05s
+click,stale,fresh,5,1,0.0952,5,18.3,0,13302,5594,10600,101550,1088,claude-opus-5-5,2.1.327,56 passed in 0.06s
+more-itertools,stale,fresh,5,1,0.1183,7,20.4,0,13302,5602,10921,146166,1714,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.84s"
+more-itertools,stale,resume,5,1,1.0807,3,21.8,203750,13302,191694,193240,424032,1484,claude-opus-5-5,2.1.327,"504 passed, 1 skipped in 0.85s"

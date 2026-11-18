@@ -4,7 +4,7 @@ Run on 2026-11-14. Model `claude-opus-5-5`, cheaper model `claude-sonnet-5-5`, C
 
 ## Result
 
-**In two large sessions, starting fresh from turnwise's handoff note did the same follow-up bug fix for about one eleventh of the cost of resuming the stale session, and staying on the same model did a small job for under a third of the cost of switching to a cheaper one. Every run passed its check.** Each comparison has one trial per session, so this is a demonstration of the size of the effect, not a measured average.
+**In two large sessions, starting fresh from turnwise's handoff note did the same follow-up bug fix for about one eleventh of the cost of resuming the stale session, and staying on the same model did a small job for under a third of the cost of switching to a cheaper one. Every run passed its check.** The first run had one trial per session. The stale-session comparison was then repeated with five trials per session (below), which gave the same result: fresh cost about a tenth of resuming, and all 20 runs passed. The model-switch comparison still has one trial per session.
 
 ### Stale session: resume or start fresh
 
@@ -23,6 +23,18 @@ The follow-up task was a bug fix, started after a six-minute wait so the 5-minut
 | Seconds | 25.2 and 28.6 | 13.2 and 15.9 |
 
 The cache readings confirm the setup: each resume re-wrote the whole session, and each fresh start wrote only its small opening context. The fresh sessions needed one search to find the code again, then fixed and tested it. They did not re-read the codebase.
+
+#### Repeat with five trials
+
+Run on 2026-11-17 with Claude Code 2.1.327, same models and sessions, five trials per session. The order of resume and fresh alternated between trials. Rows are in [bench/results/sessions-5trial/summary.csv](../bench/results/sessions-5trial/summary.csv).
+
+| Session | Resume: median (range) | Fresh: median (range) | Fresh costs | Passed |
+|---|---:|---:|---:|---:|
+| click | $0.971 ($0.932–$1.782) | $0.097 ($0.087–$0.105) | 10% of resume | 10 of 10 |
+| more-itertools | $1.075 ($1.027–$1.081) | $0.100 ($0.088–$0.125) | 9% of resume | 10 of 10 |
+| Both | mean $1.092 | mean $0.101 | 9% of resume | 20 of 20 |
+
+Every resume's first request wrote 158,884 or 190,543 to 191,694 tokens to cache, and every fresh start wrote about 5,600, so the cache had expired before each run as intended. The one outlier, a $1.782 resume of click in trial 5, took 376 seconds where the others took about 20: the run stalled for more than five minutes, the cache expired again mid-run, and the session was written a second time (321,613 tokens in all). Without it, click's resumes cost $0.932 to $0.973. The test cost $14.16, including $2.23 for the two session builds.
 
 ### Model switch: switch or stay
 
@@ -44,7 +56,7 @@ All four runs passed. Switching re-wrote 161,167 and 190,704 tokens into the new
 - **Headless runs use a 5-minute cache at $5 per million tokens written.** Desktop sessions use a 1-hour cache at $8, so each rebuild costs 1.6 times as much there.
 - **A long stretch of work on the cheaper model can still pay for a switch.** The test covers a small job only. The break-even was not measured.
 - **It shows what each choice costs, not how often people choose well.** The guard only informs.
-- **One trial per session, two sessions, one model, one Claude Code version.**
+- **Two sessions, one model.** The stale-session comparison has six trials per session across two runs; the model switch has one.
 
 ## What it means for real use
 
